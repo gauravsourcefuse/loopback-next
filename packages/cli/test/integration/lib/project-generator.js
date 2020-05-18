@@ -15,8 +15,8 @@ const deps = utils.getDependencies();
 const expect = require('@loopback/testlab').expect;
 
 module.exports = function (projGenerator, props, projectType) {
-  return function (this: Mocha.Context) {
-    // Increase the timeout to 60 seconds to accomodate
+  return /** @this {Mocha.Context} */ function () {
+    // Increase the timeout to 60 seconds to accommodate
     // for possibly slow CI build machines
     this.timeout(60 * 1000);
 

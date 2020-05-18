@@ -16,7 +16,7 @@ import {
   ContextExplorerConfig,
 } from '../..';
 
-describe('Context Explorer (acceptance)', function () {
+describe('Context Explorer (acceptance)', function (this: Mocha.Suite) {
   this.timeout(5000);
   let app: RestApplication;
   let request: Client;
